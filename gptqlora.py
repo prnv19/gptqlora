@@ -528,6 +528,9 @@ def make_data_module(tokenizer: transformers.PreTrainedTokenizer, args) -> Dict:
     # LongForm
     elif args.dataset == 'longform':
         dataset = load_dataset("akoksal/LongForm")
+    elif args.dataset == 'math':
+        print("Loading Math Dataset")
+        dataset = load_dataset("prnv19/MathGPT")
     elif args.dataset == 'vicuna':
         raise NotImplementedError("Vicuna data was not released.")
     else:

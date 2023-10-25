@@ -1,7 +1,7 @@
 python gptqlora.py \
-    --model_path ./llama-7b/ \
+    --model_path WizardLM/WizardMath-7B-V1.0 \
     --output_dir ./output \
-    --dataset alpaca \
+    --dataset math \
     --do_train True \
     --do_eval True \
     --do_mmlu_eval True \
